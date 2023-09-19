@@ -202,7 +202,7 @@ const TopMoviesPage = () => {
 				},
 				{ merge: true }
 			);
-			router.push('/');
+			router.push('/top-shows');
 		} catch (error) {
 			toast.error('Oops! Something went wrong');
 		}

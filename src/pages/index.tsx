@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef, FormEvent } from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import toast from 'react-hot-toast';
 
 import Header from '@/components/Home/Header';
 import Buttons from '@/components/Home/Buttons';
@@ -31,7 +32,7 @@ const HomePage: React.FC = () => {
 		const docRef = doc(db, 'users', USER_ID);
 		const bio = bioInputRef.current?.value;
 		try {
-			if (username !== '' && bio !== '' && location !== '')
+			if (username !== '' && location !== '') {
 				await setDoc(
 					docRef,
 					{
@@ -41,11 +42,12 @@ const HomePage: React.FC = () => {
 					},
 					{ merge: true }
 				);
-			setProfileChanged(false);
-			router.push('birthday');
-		} catch (error) {
-			console.log('error');
-		}
+				setProfileChanged(false);
+				router.push('birthday');
+			} else {
+				toast.error('Oops something went wrong :(');
+			}
+		} catch (error) {}
 	}
 
 	type UserData = {
