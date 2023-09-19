@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './top-movies.module.css';
-import Buttons from '@/components/Home/Buttons';
+import Buttons from '@/components/shared/Buttons';
 import Movie from '@/components/TopMoviesPage/Movie';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/router';
@@ -202,7 +202,7 @@ const TopMoviesPage = () => {
 				},
 				{ merge: true }
 			);
-			router.push('/top-shows');
+			router.push('/onboarding/top-shows');
 		} catch (error) {
 			toast.error('Oops! Something went wrong');
 		}
@@ -296,9 +296,9 @@ const TopMoviesPage = () => {
 				</button>
 			</div>
 			<Buttons
-				nextPage={'/top-shows'}
+				nextPage={'/onboarding/top-shows'}
 				required={false}
-				prevPage={'/top-genres'}
+				prevPage={'/onboarding/top-genres'}
 				onPageSubmit={onPageSubmit}
 				profileChanged={profileChanged && totalSelected === 5}
 			/>

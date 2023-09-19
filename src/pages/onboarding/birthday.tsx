@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './birthday.module.css';
 import Image from 'next/image';
-import Buttons from '@/components/Home/Buttons';
+import Buttons from '@/components/shared/Buttons';
 import { useRouter } from 'next/router';
 import toast from 'react-hot-toast';
 
@@ -89,7 +89,7 @@ const AddBirthday = () => {
 				{ merge: true }
 			);
 
-			router.push('/top-genres');
+			router.push('/onboarding/top-genres');
 		} catch (error) {
 			toast.error('Server error. Please try again later');
 		}
@@ -160,8 +160,8 @@ const AddBirthday = () => {
 			<Buttons
 				onPageSubmit={onPageSubmit}
 				required
-				nextPage={'/birthday'}
-				prevPage={'/'}
+				nextPage={'/onboarding/top-genres'}
+				prevPage={'/onboarding/profile-info'}
 				profileChanged={inputsValid}
 			/>
 		</section>

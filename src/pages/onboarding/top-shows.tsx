@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import styles from './TopShowsPage.module.css';
+import styles from './top-shows.module.css';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/router';
 import { getFirestore, doc, setDoc } from 'firebase/firestore';
 import app from '@/lib/firebase';
 import Image from 'next/image';
-import Buttons from '@/components/Home/Buttons';
+import Buttons from '@/components/shared/Buttons';
 import Movie from '@/components/TopMoviesPage/Movie';
 import Selection from '@/components/TopMoviesPage/Selection';
 
@@ -206,7 +206,7 @@ const TopShowsPage = () => {
 				},
 				{ merge: true }
 			);
-			router.push('/');
+			router.push('/onboarding/profile-info');
 		} catch (error) {
 			toast.error('Oops! Something went wrong');
 		}
@@ -300,9 +300,9 @@ const TopShowsPage = () => {
 				</button>
 			</div>
 			<Buttons
-				nextPage={'/'}
+				nextPage={'/onboarding/profile-info'}
 				required={false}
-				prevPage={'/top-genres'}
+				prevPage={'/onboarding/top-movies'}
 				onPageSubmit={onPageSubmit}
 				profileChanged={profileChanged && totalSelected === 5}
 				lastStep

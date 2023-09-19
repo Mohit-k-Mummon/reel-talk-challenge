@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './top-genres.module.css';
-import Buttons from '@/components/Home/Buttons';
+import Buttons from '@/components/shared/Buttons';
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/router';
 
@@ -90,7 +90,7 @@ const SelectGenresPage = () => {
 				},
 				{ merge: true }
 			);
-			router.push('/top-movies');
+			router.push('/onboarding/top-movies');
 		} catch (error) {
 			toast.error('Oops! Something went wrong');
 		}
@@ -144,8 +144,8 @@ const SelectGenresPage = () => {
 
 			<Buttons
 				required
-				prevPage={'/birthday'}
-				nextPage={'/'}
+				prevPage={'/onboarding/birthday'}
+				nextPage={'/onboarding/top-movies'}
 				onPageSubmit={onPageSubmit}
 				profileChanged={profileChanged && totalSelected === 3}
 			/>
