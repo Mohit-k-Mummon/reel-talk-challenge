@@ -42,11 +42,12 @@ const ProfileInfoPage: React.FC = () => {
 					{ merge: true }
 				);
 				setProfileChanged(false);
-				router.push('birthday');
+				router.push('/onboarding/birthday');
 			} else {
-				toast.error('Oops something went wrong :(');
 			}
-		} catch (error) {}
+		} catch (error) {
+			toast.error('Oops something went wrong :(');
+		}
 	}
 
 	type UserData = {
