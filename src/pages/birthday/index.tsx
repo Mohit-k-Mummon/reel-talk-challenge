@@ -154,7 +154,7 @@ const AddBirthday = () => {
 					</div>
 				</div>
 				<div data-aos='fade-left' className={styles['image-container']}>
-					<Image src={'/movies.png'} fill alt=''></Image>
+					<Image src={'/movies.webp'} fill alt=''></Image>
 				</div>
 			</div>
 			<Buttons
