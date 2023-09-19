@@ -204,7 +204,7 @@ const HomePage: React.FC = () => {
 							{!isEditingLocation ? (
 								<Image
 									className={styles['pin-icon']}
-									src={'/pin.png'}
+									src={'/pin.webp'}
 									height={24}
 									width={24}
 									alt=''
