@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import toast from 'react-hot-toast';
 import styles from './profile-info.module.css';
+import Metatags from '@/components/layout/MetaTags';
 
 import Buttons from '@/components/shared/Buttons';
 import app from '@/lib/firebase';
@@ -139,6 +140,7 @@ const ProfileInfoPage: React.FC = () => {
 
 	return (
 		<section className={styles.container}>
+			<Metatags title='Set Profile Info' description='Setup your profile' />
 			{/* ProgressBar */}
 			<div className={styles.progress}>
 				<Image src={'/progress-2-6.png'} fill alt='' />

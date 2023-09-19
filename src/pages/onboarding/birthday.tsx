@@ -7,6 +7,7 @@ import toast from 'react-hot-toast';
 
 import { getFirestore, setDoc, doc, Timestamp } from 'firebase/firestore';
 import app from '@/lib/firebase';
+import Metatags from '@/components/layout/MetaTags';
 const db = getFirestore(app);
 
 const USER_ID = 'bE2RmKF1qni2Y58Df2GM';
@@ -97,6 +98,10 @@ const AddBirthday = () => {
 
 	return (
 		<section className={styles.container}>
+			<Metatags
+				title='Set your birthday'
+				description='Personalizing your profile will enable us to suggest like-minded users and nearby communities for exciting watch parties and movie premiere gatherings'
+			/>
 			<div className={styles.progress}>
 				<Image src={'/progress-3-6.png'} fill alt='' />
 			</div>

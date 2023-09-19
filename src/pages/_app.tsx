@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
 		}
 		// Initialize AOS when the component mounts
 		initAOS();
-	}, []);
+	}, [router]);
 	return (
 		<>
 			<Layout>

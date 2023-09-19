@@ -10,6 +10,7 @@ import Selection from '@/components/TopMoviesPage/Selection';
 // FireBase
 import { getFirestore, doc, setDoc } from 'firebase/firestore';
 import app from '@/lib/firebase';
+import Metatags from '@/components/layout/MetaTags';
 const db = getFirestore(app);
 
 const dummyMovies = [
@@ -209,6 +210,7 @@ const TopMoviesPage = () => {
 	}
 	return (
 		<section className={styles.container}>
+			<Metatags title='Select Movies' description='Select your top 5 movies' />
 			{/* ProgressBar */}
 			<div className={styles.progress}>
 				<Image src={'/progress-5-6.png'} fill alt='' />

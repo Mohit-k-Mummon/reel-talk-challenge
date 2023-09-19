@@ -9,6 +9,7 @@ import Genre from '@/components/TopGenresPage/Genre';
 
 import { getFirestore, doc, setDoc } from 'firebase/firestore';
 import app from '@/lib/firebase';
+import Metatags from '@/components/layout/MetaTags';
 const db = getFirestore(app);
 
 const initialGenres = [
@@ -97,6 +98,7 @@ const SelectGenresPage = () => {
 	}
 	return (
 		<section className={styles.container}>
+			<Metatags title='Select genres' description='Select your favorite genres' />
 			{/* ProgressBar */}
 			<div className={styles.progress}>
 				<Image src={'/progress-4-6.png'} fill alt='' />

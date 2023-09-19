@@ -1,3 +1,4 @@
+import Metatags from '@/components/layout/MetaTags';
 import React, { useState } from 'react';
 import styles from './top-shows.module.css';
 import toast from 'react-hot-toast';
@@ -213,6 +214,8 @@ const TopShowsPage = () => {
 	}
 	return (
 		<section className={styles.container}>
+			<Metatags title='Select Movies' description='Select your top 5 movies' />
+
 			{/* ProgressBar */}
 			<div className={styles.progress}>
 				<Image src={'/progress-6-6.png'} fill alt='' />
