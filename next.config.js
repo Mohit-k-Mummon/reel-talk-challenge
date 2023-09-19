@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+	reactStrictMode: true,
+	images: {
+		domains: ['m.media-amazon.com'], // Add the domain here
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

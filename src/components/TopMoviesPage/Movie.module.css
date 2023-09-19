@@ -1,0 +1,41 @@
+.movie {
+	width: min-content;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+.poster-container {
+	padding: 3px;
+}
+
+.poster {
+	border-radius: 4px;
+	transition: all ease 0.1s;
+}
+
+.poster-selected {
+	outline: 3px solid #ffa724;
+}
+
+.movie p {
+	font-size: 1.2rem;
+}
+
+.checkmark {
+	position: absolute;
+	visibility: hidden;
+	top: 1rem;
+	right: 1rem;
+	transition: all ease 0.1s;
+}
+
+.checkmark-visible {
+	visibility: visible;
+}

@@ -1,0 +1,53 @@
+.container {
+	max-width: 77.2rem;
+	margin: 8rem auto;
+}
+
+.progress {
+	position: relative;
+	height: 3.2rem;
+}
+
+.header {
+	max-width: 50.4rem;
+	margin: 6.4rem auto 0;
+}
+
+.header h1 {
+	line-height: 48.18px;
+	font-size: 3.6rem;
+	text-align: center;
+	color: #fff;
+}
+
+.genres {
+	margin: 6.4rem 0 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2.4rem;
+}
+
+.show-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 6.4rem;
+}
+
+.show-more {
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0.08px;
+	margin-top: 2.4rem;
+}
+
+.chevron {
+	margin-left: 4px;
+	position: relative;
+	bottom: 2px;
+	transition: all ease 0.3s;
+}
+
+.chevron-active {
+	transform: rotate(180deg);
+}

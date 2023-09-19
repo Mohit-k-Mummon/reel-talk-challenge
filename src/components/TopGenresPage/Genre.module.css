@@ -1,0 +1,28 @@
+.genre {
+	height: 4.6rem;
+	width: 17.8rem;
+	background-color: #fff;
+	padding: 1.2rem;
+	border-radius: 8px;
+	border: 2px solid #6d6d6d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all ease 0.3s;
+}
+
+.title {
+	color: #000;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.08px;
+	pointer-events: none;
+}
+
+.selected {
+	background-color: rgba(255, 167, 36, 1);
+	border: none;
+}

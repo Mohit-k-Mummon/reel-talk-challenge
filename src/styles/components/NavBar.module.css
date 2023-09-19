@@ -1,0 +1,101 @@
+/* NAVIGATION BAR */
+.nav {
+	background-color: #fff;
+	height: 5.6rem;
+}
+
+.container {
+	height: 100%;
+	max-width: 112rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.55rem 1.6rem;
+}
+
+/* LOGO AND LINK CONTAINER */
+.links {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.links li {
+	font-size: 1.6rem;
+	color: #222;
+	font-weight: 400;
+}
+
+/* SEARCH BAR */
+.search {
+	background-color: rgba(0, 0, 0, 0.08);
+	height: 3.4rem;
+	width: 35.1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.6rem 0.6rem 0.6rem 2.4rem;
+	border-radius: 8px;
+}
+
+.search-button {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+	background: transparent;
+}
+
+.icon {
+	height: 2rem;
+	width: 2rem;
+}
+
+.input {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 1.6rem;
+	font-family: inherit;
+	width: 100%;
+	color: #222;
+}
+
+/* AUTH BUTTONS */
+.buttons {
+	height: 3.4rem;
+	width: 20.7rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.buttons a {
+	display: inline-block;
+	font-size: 1.6rem;
+	line-height: 2.186rem;
+	font-weight: 600;
+	height: 100%;
+	width: fit-content;
+	border-radius: 4px;
+	display: flex;
+	padding: 0.5rem 1.6rem;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 0.005em;
+	color: #222;
+}
+
+.login {
+	border: 1px solid #6d6d6d;
+}
+
+.signup {
+	background-color: #ffa724;
+}
